@@ -1,0 +1,27 @@
+{
+    "name": "neriba/dpd-api-lib",
+    "description": "DPD API library, to help to integrate with other systems",
+    "homepage": "https://github.com/NerijusBartosevicius/dpd-api-lib",
+    "type": "library",
+    "version": "1.0.1",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "NeriBa\\DpdApiLib\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nerijus Bartosevicius",
+            "email": "nerijus.bartosevicius@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "^8.0|^8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "10.0.x-dev"
+    }
+}
