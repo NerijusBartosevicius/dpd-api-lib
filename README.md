@@ -2,6 +2,12 @@
 
 DPD API library, to help to integrate with other systems
 
+<p align="left">
+<a href="https://packagist.org/packages/neriba/dpd-api-lib"><img src="https://img.shields.io/packagist/v/neriba/dpd-api-lib.svg?style=flat-square" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/neriba/dpd-api-lib"><img src="https://img.shields.io/packagist/dt/neriba/dpd-api-lib.svg?style=flat-square" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/neriba/dpd-api-lib"><img src="https://img.shields.io/packagist/l/neriba/dpd-api-lib" alt="License"></a>
+</p>
+
 ## Official DPD docs
 - [DPD Amber API](https://esiunta.dpd.lt/api/)
 - [DPD API documentation](https://github.com/NerijusBartosevicius/dpd-api-lib/blob/main/docs/DPD-Telli-API-documentation-v1-1-3.pdf)
