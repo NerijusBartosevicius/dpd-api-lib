@@ -3,7 +3,7 @@
     "description": "DPD API library, to help to integrate with other systems",
     "homepage": "https://github.com/NerijusBartosevicius/dpd-api-lib",
     "type": "library",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "license": "MIT",
     "minimum-stability": "dev",
     "autoload": {
@@ -19,7 +19,7 @@
         }
     ],
     "require": {
-        "php" : "^8.0|^8.1"
+        "php" : "^8.0|^8.1|^8.2"
     },
     "require-dev": {
         "phpunit/phpunit": "10.0.x-dev"

@@ -289,6 +289,45 @@ class Request
     }
 
     /**
+     * Gets parcel statuses.
+     *
+     * @param array $params
+     *
+     * @return bool|string
+     * @throws DpdException
+     */
+    public function getTrackingStatus(array $params = []): bool|string
+    {
+        return $this->call('/status/tracking?' . http_build_query($params));
+    }
+
+    /**
+     * Subscribe to parcel.
+     *
+     * @param array $params
+     *
+     * @return bool|string
+     * @throws DpdException
+     */
+    public function subscribeToParcel(array $params = []): bool|string
+    {
+        return $this->call('/status/events/subscribetoparcel?' . http_build_query($params));
+    }
+
+    /**
+     * Unsubscribe to parcel.
+     *
+     * @param array $params
+     *
+     * @return bool|string
+     * @throws DpdException
+     */
+    public function unsubscribeToParcel(array $params = []): bool|string
+    {
+        return $this->call('/status/events/unsubscribetoparcel?' . http_build_query($params));
+    }
+
+    /**
      * @param string $endpoint
      * @param string $method
      * @param array $params

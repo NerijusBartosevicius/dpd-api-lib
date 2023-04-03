@@ -230,6 +230,32 @@ $dpd->getPickupTimeFrames(['country' => 'LT','zip' => 51336]);
 $dpd->getProblems(123456);
 ```
 
+## Status
+
+### Gets parcel statuses
+
+```php
+// additional parameters are possible as an array e.g ['pknr' => '05808021421108','show_all' => 1]
+// Parameters list: https://esiunta.dpd.lt/api#/Status/ede44d1ca4e3e15955d44ecc42970e3c   
+$dpd->getTrackingStatus(['pknr' => '05808021421108']);
+```
+
+### Subscribe to parcel
+
+```php
+// additional parameters are possible as an array e.g ['parcelnumber' => '05808021421108', 'callbackurl' => 'https://www.hereisyoursiteurl.com']
+// Parameters list: https://esiunta.dpd.lt/api#/Status/8d78b691726ba36b76c5960067c1370c 
+$dpd->subscribeToParcel(['parcelnumber' => '05808021421108', 'callbackurl' => 'https://www.hereisyoursiteurl.com']);
+```
+
+### Unsubscribe to parcel
+
+```php
+// additional parameters are possible as an array e.g ['parcelnumber' => '05808021421108', 'callbackurl' => 'https://www.hereisyoursiteurl.com']
+// Parameters list: https://esiunta.dpd.lt/api#/Status/915e1bfce8f27458cfb3f27f78326866
+$dpd->unsubscribeToParcel(['parcelnumber' => '05808021421108', 'callbackurl' => 'https://www.hereisyoursiteurl.com']);
+```
+
 ## Tracking
 
 #### Environments
